@@ -104,7 +104,9 @@ class ChatBotGraph:
 			question, answer = find_similar_question(sent)
 			return f'I don\'t know if I fully understood the question, but here it\'s what I found:\n Similar question: {question}\n{answer}'
 			
-		res_sql = self.parser.parser_main(res_classify)
+		error_message = "GitHub Actions workflow failed. Please check the error logs for more details."
+        # Display the error_message in the GUI
+        res_sql = self.parser.parser_main(res_classify)
 		#try:
 				print("Resultant SQL: ", res_sql)
         except Exception as e:
