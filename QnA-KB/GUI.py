@@ -2,6 +2,8 @@ from question_classifier import *
 from question_parser import *
 from answer_search import *
 import tkinter.messagebox
+import logging
+import traceback
 
 from tkinter import *
 from PIL import ImageTk, Image
