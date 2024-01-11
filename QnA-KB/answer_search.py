@@ -19,11 +19,11 @@ class AnswerSearcher:
 				answers += self.g.run(query).data()
 			final_answer = self.answer_prettify(question_type, answers)
 			if final_answer:
-				final_answers.append(final_answer)
+				return final_answer
 		return final_answers
 
 	def answer_prettify(self, question_type, answers):
-		return []
+		
 		if not answers:
 			return ''
 		if question_type == 'disease_symptom':
@@ -39,7 +39,7 @@ class AnswerSearcher:
 		elif question_type == 'disease_cause':
 			desc = [i['m.cause'] for i in answers]
 			subject = answers[0]['m.name']
-			return 'The possible causes of {0} are: {1}'.format(subject, '；'.join(list(set(desc))[:self.num_limit]))
+			final_answer = 'The possible causes of {0} are: {1}'.format(subject, '；'.join(list(set(desc))[:self.num_limit]))
 
 		elif question_type == 'disease_prevent':
 			desc = [i['m.prevent'] for i in answers]
@@ -49,7 +49,7 @@ class AnswerSearcher:
 		elif question_type == 'disease_lasttime':
 			desc = [i['m.cure_lasttime'] for i in answers]
 			subject = answers[0]['m.name']
-			return 'The period in which {0} treatment may last is: {1}'.format(subject, '；'.join(list(set(desc))[:self.num_limit]))
+			final_answer = 'The period in which {0} treatment may last is: {1}'.format(subject, '；'.join(list(set(desc))[:self.num_limit]))
 
 		elif question_type == 'disease_cureway':
 			desc = [';'.join(i['m.cure_way']) for i in answers]
@@ -67,7 +67,7 @@ class AnswerSearcher:
 			subject = answers[0]['m.name']
 			desc = [i for i in desc1 + desc2 if i != subject]
 			final_answer = 'The symptoms of {0} include: {1}'.format(subject, '；'.join(list(set(desc))[:self.num_limit]))
-			final_answers.append(final_answer)
+			return final_answer
 
 		return final_answer
 
