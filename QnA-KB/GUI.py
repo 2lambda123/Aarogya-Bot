@@ -105,9 +105,17 @@ class ChatBotGraph:
 			return f'I don\'t know if I fully understood the question, but here it\'s what I found:\n Similar question: {question}\n{answer}'
 			
 		res_sql = self.parser.parser_main(res_classify)
-		#print("Resultant SQL: ", res_sql)
+		#try:
+				print("Resultant SQL: ", res_sql)
+        except Exception as e:
+            logging.error("GitHub Actions workflow failed:")
+            logging.error(traceback.format_exc())
 		final_answers = self.searcher.search_main(res_sql)
-		#print("Final Answer", final_answers)
+		#try:
+				print("Final Answer", final_answers)
+        except Exception as e:
+            logging.error("GitHub Actions workflow failed:")
+            logging.error(traceback.format_exc())
 		if not final_answers:
 			question, answer = find_similar_question(sent)
 			return f'I don\'t know if I fully understood the question, but here it\'s what I found:\n Similar question: {question}\n{answer}'
