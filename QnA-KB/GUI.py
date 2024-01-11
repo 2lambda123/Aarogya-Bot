@@ -18,7 +18,8 @@ from keras.utils import np_utils
 from keras.layers.embeddings import Embedding
 from keras.utils.data_utils import get_file
 from keras.models import Model
-from keras.layers import Input, Embedding, LSTM, Dropout, concatenate, Dense, BatchNormalization, Lambda, TimeDistributed, Dot, dot
+try:
+    from keras.layers import Input, Embedding, LSTM, Dropout, concatenate, Dense, BatchNormalization, Lambda, TimeDistributed, Dot, dot
 import keras.backend as K
 from keras.optimizers import Adadelta
 from keras.callbacks import ModelCheckpoint
