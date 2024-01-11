@@ -16,8 +16,7 @@ class AnswerSearcher:
 			queries = sql_['sql']
 			answers = []
 			for query in queries:
-				ress = self.g.run(query).data()
-				answers += ress
+				answers += self.g.run(query).data()
 			final_answer = self.answer_prettify(question_type, answers)
 			if final_answer:
 				final_answers.append(final_answer)
@@ -68,6 +67,7 @@ class AnswerSearcher:
 			subject = answers[0]['m.name']
 			desc = [i for i in desc1 + desc2 if i != subject]
 			final_answer = 'The symptoms of {0} include: {1}'.format(subject, '；'.join(list(set(desc))[:self.num_limit]))
+			final_answers.append(final_answer)
 
 		return final_answer
 
