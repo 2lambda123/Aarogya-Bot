@@ -4,9 +4,9 @@ class AnswerSearcher:
 	def __init__(self):
 		self.g = Graph(
 			host="127.0.0.1",
-			http_port=7474,
+			http_port=7687,
 			user="neo4j",
-			password="root")
+			password="neo4j")
 		self.num_limit = 20
 
 	def search_main(self, sqls):
