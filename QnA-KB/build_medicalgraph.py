@@ -129,7 +129,7 @@ class MedicalGraph:
 		return
 
 	def export_data(self):
-		Departments, Symptoms, Diseases, Cause, Accompany, Prevent, Cureway, Desc, disease_infos, rels_department, rels_symptom, rels_acompany, rels_category = self.read_nodes()
+		Departments, Symptoms, Diseases, Cause, Accompany, Prevent, Cureway, Desc, disease_infos, rels_department, rels_symptom, rels_accompany, rels_category = self.read_nodes()
 		f_department = open('dict/department.txt', 'w+')
 		f_symptom = open('dict/symptoms.txt', 'w+')
 		f_disease = open('dict/disease.txt', 'w+')
