@@ -89,7 +89,7 @@ Aarogya Bot can attempt to answer your queries about a limited set of diseases a
 
 ### To run the project:
 
-* [Fork](https://github.com/arghyadeep99/Aarogya-Bot) this Repository.
+* [Fork](https://github.com/arghyadeep99/Aarogya-Bot) this Repository and set up GitHub Actions as per the instructions below:
 * cd into the directory in the terminal and run as:
   -`pip install -r requirements.txt`
 * Install and run neo4j with instructions as mentioned [here](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-neo4j-on-ubuntu-20-04).
@@ -108,7 +108,7 @@ Aarogya Bot can attempt to answer your queries about a limited set of diseases a
 * cd into `frontend/` folder and run `yarn serve`
 
 
-#### This project still has scope of development, so you can also contribute to this Project as follows:
+#### In case of failure of the GitHub Actions workflow, check the error logs by following the steps below:
 * [Fork](https://github.com/arghyadeep99/Aarogya-Bot) this Repository.
 * Clone your Fork on a different branch:
 	* `git clone -b <name-of-branch> https://github.com/arghyadeep99/Aarogya-Bot.git`
