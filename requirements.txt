@@ -22,7 +22,7 @@ packaging==23.1
 pandas==2.2.2
 pansi==2020.7.3
 protobuf==5.26.1
-py2neo==2021.2.3
+py2neo==2021.2.4
 pyahocorasick==2.1.0
 Pygments==2.17.2
 python-dateutil==2.8.2
