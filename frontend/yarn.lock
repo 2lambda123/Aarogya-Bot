@@ -8252,10 +8252,10 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-vue-bot-ui@^0.2.8:
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/vue-bot-ui/-/vue-bot-ui-0.2.8.tgz#833e2f41b56726f7cfc7e7d6da2cf961cb910a2a"
-  integrity sha512-xT01ZMIkaEItrbrHztTkIphjiEK3qbhZIcXYgIP5+FSxJo3/w4a/dMfaYlu7YE9PMLJX2U1WmD776m26S4SjHQ==
+vue-bot-ui@^0.2.11:
+  version "0.2.11"
+  resolved "https://registry.yarnpkg.com/vue-bot-ui/-/vue-bot-ui-0.2.11.tgz#6ae20e663c36b71b4c93f8a6f23b445e870048db"
+  integrity sha512-EqRnVqbmCZeRwGSlyITp7H1RAqLliyU4RJvFCzJX4lNc5TZav2UhkfDrOwftPOAo7s6XQ9Rj1o2l+wq+tHXjFA==
 
 vue-eslint-parser@^7.0.0:
   version "7.2.0"
