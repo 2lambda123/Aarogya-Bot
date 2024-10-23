@@ -10,7 +10,7 @@
   "dependencies": {
     "axios": "^0.28.1",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11",
+    "vue": "^3.0.0",
     "vue-bot-ui": "^0.2.11"
   },
   "devDependencies": {
