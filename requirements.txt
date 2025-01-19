@@ -1,6 +1,6 @@
 absl-py==2.1.0
 astor==0.8.1
-certifi==2024.7.4
+certifi==2024.12.14
 click==8.1.7
 Flask==2.2.5
 Flask-Cors==5.0.0
