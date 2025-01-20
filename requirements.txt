@@ -4,7 +4,7 @@ certifi==2024.12.14
 click==8.1.8
 Flask==2.2.5
 Flask-Cors==5.0.0
-gast==0.5.3
+gast==0.6.0
 grpcio==1.63.0
 h5py==3.11.0
 importlib-metadata==8.5.0
