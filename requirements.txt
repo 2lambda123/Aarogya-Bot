@@ -6,7 +6,7 @@ Flask==2.2.5
 Flask-Cors==5.0.0
 gast==0.6.0
 grpcio==1.63.0
-h5py==3.11.0
+h5py==3.13.0
 importlib-metadata==8.5.0
 interchange==2021.0.4
 itsdangerous==2.2.0
